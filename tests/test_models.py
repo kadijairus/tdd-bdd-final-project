@@ -26,10 +26,8 @@ While debugging just these tests it's convenient to use this:
 import os
 import logging
 import unittest
-from decimal import Decimal
-from service.models import Product, Category, db
+from service.models import Product, db
 from service import app
-from tests.factories import ProductFactory
 
 DATABASE_URI = os.getenv(
     "DATABASE_URI", "postgresql://postgres:postgres@localhost:5432/postgres"
